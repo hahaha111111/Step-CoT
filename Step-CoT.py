@@ -1,9 +1,0 @@
-torch>=2.0.0
-torchvision>=0.15.0
-transformers>=4.30.0
-clip
-scikit-learn
-Pillow
-tqdm
-pyyaml
-numpy
