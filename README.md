@@ -5,7 +5,7 @@ This repository implements the **Step-CoT** framework from the paper:
 > **Step-CoT: Stepwise Visual Chain-of-Thought for Medical Visual Question Answering**  
 > *Lin Fan, Yafei Ou, Zhipeng Deng, Pengyu Dai, Hou Chongxian, Jiale Yan, Yaqian Li, Kaiwen Long, Xun Gong, Masayuki Ikebe, Yefeng Zheng*  
 > arXiv:2603.13878 [cs.CV]  
-> [Paper](https://arxiv.org/pdf/2603.13878) | [Dataset](https://huggingface.co/datasets/f-15a/Step-CoT) | [Benchmark](https://github.com/hahaha111111/Step-CoT)
+> [Paper](https://arxiv.org/pdf/2603.13878) | [Dataset](https://huggingface.co/datasets/fl-15o/Step-CoT) | [Benchmark](https://github.com/hahaha111111/Step-CoT)
 
 ## Overview
 
