@@ -1,0 +1,45 @@
+# Default configuration
+seed: 42
+device: "cuda"  # or "cpu"
+
+# Data
+batch_size: 32
+max_len: 128
+num_workers: 4
+
+# Steps
+step_num_classes: [4, 4, 6, 7, 5, 7, 9]
+
+# Teacher model
+teacher:
+  text_model_name: "bert-base-uncased"
+  hidden_dim: 768
+  gat_heads: 4
+  gat_layers: 2
+  gat_hid_per_head: null  # auto = hidden_dim // heads
+  lr: 5e-5
+  epochs: 10
+  patience: 3
+
+# Student model
+student:
+  hidden_dim: 512
+  dropout: 0.3
+  lr: 1e-4
+
+# Distillation
+distill:
+  num_epochs: 40
+  teacher_pretrain_epochs: 2
+  teacher_supervised: true
+  teacher_loss_scale: 1.0
+  student_loss_scale: 1.0
+  proj_dim: 256
+  temperature: 2.0
+  alpha_kd: 0.5
+  alpha_ch: 1.0
+  grad_clip: 1.0
+
+# Paths
+data_root: "path/to/Step-CoT"   # modify this
+save_dir: "checkpoints"
